@@ -1,6 +1,6 @@
-mod day2;
+mod day1;
 
 fn main(){
-    day2::part1();
-    day2::part2();
+    day1::part1();
+    // day2::part2();
 }

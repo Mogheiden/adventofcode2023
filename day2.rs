@@ -4,6 +4,8 @@ struct CubeCounts {
 
 const MAX_DICE: CubeCounts = CubeCounts { blue: 14, green: 13, red: 12 };
 
+
+// created in collaboration with @Jaaamesey
 pub fn part1() {
     let input_str = include_str!("./day2.txt");
 
