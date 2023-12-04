@@ -1,4 +1,6 @@
-day3 = open("day3test.txt").readlines()
+import time
+
+day3 = open("day3.txt").readlines()
 day3 = [line.strip() for line in day3]
 
 numdict = {}
@@ -39,6 +41,8 @@ for i in range(len(day3)):
 # part1answer = sum(partnumbers)
 print(part1answer)
 
+start = time.time()
+
 part2answer = 0
 
 for i in range(len(day3)):
@@ -60,3 +64,6 @@ for i in range(len(day3)):
                 part2answer += answer
 
 print(part2answer)
+end = time.time()
+
+print((end - start) * 1000)
