@@ -25,5 +25,6 @@ for i in range(len(day4)):
         array[i + j + 1] += array[i]
 
 print(part1answer)
+print(array)
 print(sum(array))
 
