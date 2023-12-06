@@ -47,17 +47,14 @@ middle = p2time//2
 while middle < p2time:
     distance = (p2time - middle) * middle
     if distance < p2dist:
-        max_time = middle - 1
-        break
-    middle += 1
+        for i in range(15000):
+            off = middle - i
+            cur = (p2time - off) * off
+            if cur > p2dist:
+                max_time = off
+                break
+    middle += 15000
 
-middle = p2time//2
-
-while middle > 0:
-    distance = (p2time - middle) * middle
-    if distance < p2dist:
-        min_time = middle + 1
-        break
-    middle -= 1
+min_time = p2time - max_time
 
 print(max_time - min_time + 1)
