@@ -34,7 +34,7 @@ pub fn part1()->i32{
 pub fn part2(){
     let distance:i64 = 334113513502430;
     let time = 56717999;
-    let mut middle = time/2;
+    let mut middle = time / 2;
     let mut max = 0;
     
     while middle < time {
