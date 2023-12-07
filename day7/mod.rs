@@ -74,7 +74,7 @@ pub fn part1() {
         hand_buckets[hb_index as usize].push(hand);
     }
 
-    for mut vector in hand_buckets.iter_mut() {
+    for vector in hand_buckets.iter_mut() {
         vector.sort_unstable_by(|a, b| {
             let card1 = a.0;
             let card2 = b.0;
@@ -195,7 +195,7 @@ pub fn part2() {
         hand_buckets[hb_index as usize].push(hand);
     }
 
-    for mut vector in hand_buckets.iter_mut() {
+    for vector in hand_buckets.iter_mut() {
         vector.sort_unstable_by(|a, b| {
             let card1 = a.0;
             let card2 = b.0;
