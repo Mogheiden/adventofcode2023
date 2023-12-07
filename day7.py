@@ -106,7 +106,7 @@ for hand_type in sorted_list:
         part1mult += 1
         # print(part1mult, hand[0], hand[1])
         # print(part1total)
-
+print(sorted_list[5]);
 print(part1total)
 
 part2total = 0
