@@ -21,7 +21,6 @@ pub fn part1() {
         }
     }
     let mut total = 0;
-    let mut count = 0;
     for i in 0..(galaxies.len() - 1) {
         let start = galaxies[i];
         for j in (i + 1)..galaxies.len() {
@@ -56,7 +55,6 @@ pub fn part1() {
             }
             // dbg!(doubles);
             total += doubles * 999999 + dest.1.abs_diff(start.1) + dest.0.abs_diff(start.0);
-            count += 1;
         }
         // dbg!(total);
     }
